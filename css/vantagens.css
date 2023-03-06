@@ -1,0 +1,85 @@
+#vantagens {
+  padding: 60px 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 60px;
+  justify-content: center;
+}
+
+#vantagens h3 {
+  font-size: 2rem;
+  color: #a4a4a4;
+  padding-left: 22px;
+  position: relative;
+  line-height: 1;
+}
+
+#vantagens h3::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 97%;
+  background-color: #9d71ed;
+  left: 0;
+}
+
+#vantagens .detalhe-rosa::before {
+  background-color: #e11145;
+}
+
+#vantagens .detalhe-azul::before {
+  background-color: #42b5c8;
+}
+
+#vantagens .paragrafo {
+  max-width: 25ch;
+  color: #7b7b7b;
+}
+
+.vantagens-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1100px) {
+  #vantagens {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  #vantagens .paragrafo {
+    max-width: 30ch;
+  }
+}
+
+@media (max-width: 800px) {
+  #vantagens {
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 50px;
+  }
+
+  #vantagens .paragrafo {
+   font-size: 1.125rem;
+   max-width: 25ch;
+  }
+}
+
+@media (max-width: 500px) {
+  #vantagens {
+    padding: 30px;
+    gap: 60px;
+  }
+
+  #vantagens .paragrafo {
+    font-size: 1.125rem;
+    max-width: initial;
+   }
+
+  #vantagens h3 {
+    font-size: 1.75rem;
+  }
+}
