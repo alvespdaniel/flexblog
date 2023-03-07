@@ -28,6 +28,11 @@
 #menu li {
   font-size: 1.25rem;
   padding: 10px;
+  transition: 0.2s;
+}
+
+#menu li:hover {
+  color: #122ab2;
 }
 
 @media (max-width: 1100px) {
